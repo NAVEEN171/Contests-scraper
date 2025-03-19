@@ -23,19 +23,6 @@ src/
 
 
 
-#### Query Parameters
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| Page | Number | Page number for pagination (default: 1) |
-| Solutions | Boolean | When true, returns only contests with available solutions |
-| Active | Boolean | When true, returns only active contests |
-| Status | String | Comma-separated list of contest statuses to filter by (Active, Upcoming, Expired) |
-| Platform | String | Comma-separated list of platforms to filter by (CodeChef, CodeForces, LeetCode) |
-| ContestPeriod | String | Date range in format "YYYY-MM-DD,YYYY-MM-DD" |
-| duration | Number | Filter contests by duration (in hours) |
-| Latest | Boolean | When true, sorts contests by start time in descending order |
-
 
 
 ## Filtering System
@@ -67,5 +54,19 @@ The application implements a comprehensive filtering system that uses search par
 7. **Latest First Sorting**: Sort contests by start time
    - Maps to the `Latest` query parameter (Boolean)
    - Enabled by default
+  
+
+#### Query Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| Page | Number | Page number for pagination (default: 1) |
+| Solutions | Boolean | When true, returns only contests with available solutions |
+| Active | Boolean | When true, returns only active contests |
+| Status | String | Comma-separated list of contest statuses to filter by (Active, Upcoming, Expired) |
+| Platform | String | Comma-separated list of platforms to filter by (CodeChef, CodeForces, LeetCode) |
+| ContestPeriod | String | Date range in format "YYYY-MM-DD,YYYY-MM-DD" |
+| duration | Number | Filter contests by duration (in hours) |
+| Latest | Boolean | When true, sorts contests by start time in descending order |
 
 
